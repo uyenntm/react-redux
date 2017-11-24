@@ -5,6 +5,7 @@ import SearchBar from './components/search_bar';
 import YTSearch from 'youtube-api-search';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
+import Footer from './components/Footer';
 import "./index.css"
 
 const API_KEY = 'AIzaSyDAOxQHvUzuc7vrLnZkCoLl6MprNsYBhNs';
@@ -36,10 +37,12 @@ class App extends Component{
 
         return (
             <div>
+                <h1>Welcome to uVideo!</h1>
                 <SearchBar onSearchTermChange={videoSearch} />
                 <VideoDetail  video={this.state.selectedVideo} />
                 <VideoList onVideoSelect={selectedVideo=>this.setState({selectedVideo})} 
                 videos={this.state.videos} />
+                <Footer />
             </div>
         );
     }
