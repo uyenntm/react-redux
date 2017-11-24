@@ -13,7 +13,7 @@ export default class VideoList extends Component {
   render() {
     const videoItems = this.props.videos.map((video) =>{
         return <VideoListItem 
-        onVideoClick={this.props.onVideoSelect}
+        onVideoSelect={this.props.onVideoSelect}
         key={video.etag} 
         video={video} />
       });

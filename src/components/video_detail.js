@@ -7,7 +7,7 @@ export default class VideoDetail extends Component {
         return (<div>Loading ...</div>);
     }
     const videoId = this.props.video.id.videoId;
-    console.log(this.props.video);
+    //console.log(this.props.video);
    // const videoId = '11';
     const url = `https://www.youtube.com/embed/${videoId}`;
     return (
