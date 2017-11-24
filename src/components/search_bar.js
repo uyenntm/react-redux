@@ -11,8 +11,8 @@ export default class SearchBar extends Component{
     
     render(){
         return (
-        <div className="input-group">
-         <input value={this.state.term} className="form-control"
+        <div className="search-bar">
+         <input value={this.state.term} className=""
          onChange={event=> this.setState({term:event.target.value})} />
          </div>
         )
